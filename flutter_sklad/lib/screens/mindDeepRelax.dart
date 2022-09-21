@@ -29,7 +29,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
               style: TextStyle(
                   fontSize: 12,
                   color: Color.fromRGBO(0, 0, 0, 0.5),
-                  fontFamily: "Plus Jakarta Sans",
+                  fontFamily: "PlusJakartaSans",
                   fontWeight: FontWeight.w500),
               textAlign: TextAlign.left,
             ),
@@ -41,7 +41,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
               style: TextStyle(
                   fontSize: 20,
                   color: Color.fromRGBO(0, 0, 0, 1),
-                  fontFamily: "Plus Jakarta Sans",
+                  fontFamily: "PlusJakartaSans",
                   fontWeight: FontWeight.w700),
             ),
           ),
@@ -53,7 +53,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
                   fontSize: 15,
                   color: Color.fromRGBO(30, 30, 30, 1),
                   height: 1.3,
-                  fontFamily: "Plus Jakarta Sans",
+                  fontFamily: "PlusJakartaSans",
                   fontWeight: FontWeight.w400),
             ),
           ),
@@ -76,7 +76,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
                   Text(
                     "Play Next Session",
                     style: TextStyle(
-                        fontFamily: "Plus Jakarta Sans",
+                        fontFamily: "PlusJakartaSans",
                         fontWeight: FontWeight.w500,
                         fontSize: 17),
                   )
@@ -90,7 +90,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
             decoration: const BoxDecoration(
                 border: Border(
                     bottom: BorderSide(
-                        color: Color.fromRGBO(217, 217, 217, 1), width: 1))),
+                        color: Color.fromRGBO(217, 217, 217, 0.5), width: 1))),
             child: Row(
               children: [
                 ConstrainedBox(
@@ -112,7 +112,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
                       Text(
                         "Sweet Memories",
                         style: TextStyle(
-                          fontFamily: "Plus Jakarta Sans",
+                          fontFamily: "PlusJakartaSans",
                           fontSize: 17,
                           fontWeight: FontWeight.w700,
                         ),
@@ -121,7 +121,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
                       Text(
                         "December 29 Pre-Launch",
                         style: TextStyle(
-                            fontFamily: "Plus Jakarta Sans",
+                            fontFamily: "PlusJakartaSans",
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
                             color: Color.fromRGBO(0, 0, 0, 0.5)),
@@ -175,7 +175,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
             decoration: const BoxDecoration(
                 border: Border(
                     bottom: BorderSide(
-                        color: Color.fromRGBO(217, 217, 217, 1), width: 1))),
+                        color: Color.fromRGBO(217, 217, 217, 0.5), width: 1))),
             child: Row(
               children: [
                 ConstrainedBox(
@@ -187,7 +187,8 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
                           padding: EdgeInsets.zero,
-                          backgroundColor: const Color.fromRGBO(3, 158, 162, 1)),
+                          backgroundColor:
+                              const Color.fromRGBO(3, 158, 162, 1)),
                       child: const Image(image: AssetImage("assets/play.png"))),
                 ),
                 Padding(
@@ -198,7 +199,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
                       Text(
                         "A Day Dream",
                         style: TextStyle(
-                          fontFamily: "Plus Jakarta Sans",
+                          fontFamily: "PlusJakartaSans",
                           fontSize: 17,
                           fontWeight: FontWeight.w700,
                         ),
@@ -207,7 +208,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
                       Text(
                         "December 29 Pre-Launch",
                         style: TextStyle(
-                            fontFamily: "Plus Jakarta Sans",
+                            fontFamily: "PlusJakartaSans",
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
                             color: Color.fromRGBO(0, 0, 0, 0.5)),
@@ -261,7 +262,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
             decoration: const BoxDecoration(
                 border: Border(
                     bottom: BorderSide(
-                        color: Color.fromRGBO(217, 217, 217, 1), width: 1))),
+                        color: Color.fromRGBO(217, 217, 217, 0.5), width: 1))),
             child: Row(
               children: [
                 ConstrainedBox(
@@ -273,7 +274,8 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
                           padding: EdgeInsets.zero,
-                          backgroundColor: const Color.fromRGBO(240, 146, 53, 1)),
+                          backgroundColor:
+                              const Color.fromRGBO(240, 146, 53, 1)),
                       child: const Image(image: AssetImage("assets/play.png"))),
                 ),
                 Padding(
@@ -284,7 +286,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
                       Text(
                         "Mind Explore",
                         style: TextStyle(
-                          fontFamily: "Plus Jakarta Sans",
+                          fontFamily: "PlusJakartaSans",
                           fontSize: 17,
                           fontWeight: FontWeight.w700,
                         ),
@@ -293,7 +295,7 @@ class _MindDeepRelaxState extends State<MindDeepRelax> {
                       Text(
                         "December 29 Pre-Launch",
                         style: TextStyle(
-                            fontFamily: "Plus Jakarta Sans",
+                            fontFamily: "PlusJakartaSans",
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
                             color: Color.fromRGBO(0, 0, 0, 0.5)),

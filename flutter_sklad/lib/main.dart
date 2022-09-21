@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sklad/screen.dart';
 import 'package:flutter_sklad/screens/medinow.dart';
+import 'package:flutter_sklad/screens/meditateOfSond.dart';
 import 'package:flutter_sklad/screens/mindDeepRelax.dart';
 
 void main() {
@@ -13,7 +14,9 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MindDeepRelax(),
+      //home: MindDeepRelax(),
+      //home: Medinow(),
+      home: MeditateOfSond(),
       debugShowCheckedModeBanner: false,
     );
   }
