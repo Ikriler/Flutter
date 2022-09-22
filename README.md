@@ -7,14 +7,14 @@
 
 1.	Первый макет
 
-(https://github.com/Ikriler/Flutter/blob/pr1/photochki/1.PNG "first maket")
+[](https://github.com/Ikriler/Flutter/blob/pr1/photochki/1.PNG "first maket")
 
 2.	Второй макет
 
-(https://github.com/Ikriler/Flutter/blob/pr1/photochki/2.PNG "second maket")
+[](https://github.com/Ikriler/Flutter/blob/pr1/photochki/2.PNG "second maket")
 
 3.	Третий макет
 
-(https://github.com/Ikriler/Flutter/blob/pr1/photochki/3.PNG "third maket")
+[](https://github.com/Ikriler/Flutter/blob/pr1/photochki/3.PNG "third maket")
 
 #### Вывод: сверстал макеты из Figma
