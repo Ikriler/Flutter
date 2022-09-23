@@ -11,7 +11,7 @@
 ![odin](https://github.com/Ikriler/Flutter/blob/pr1/photochki/1.PNG "first maket")
 
 2.	Второй макет </br>
-Данный макет был основан на виджете Column для построения элементов в колонну. Для последних трех элементов была использованы Row и Column.
+Данный макет был основан на виджете Column для построения элементов в колонну. Для последних трех элементов были использованы Row и Column.
 
 ![dwa](https://github.com/Ikriler/Flutter/blob/pr1/photochki/2.PNG "second maket")
 
