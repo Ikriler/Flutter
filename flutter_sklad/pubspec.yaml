@@ -38,6 +38,15 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^3.0.1
 
+  #База данных
+  sqflite: ^2.1.0
+
+  #База данных для остальных платформ
+  sqflite_common_ffi: ^2.1.1+1
+
+  #Работы с папками
+  path_provider: ^2.0.11
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -65,9 +74,6 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
-  assets:
-    - assets/
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
@@ -91,12 +97,5 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
-  fonts: 
-    - family: PlusJakartaSans
-      fonts:
-        - asset: fonts/PlusJakartaSans-Bold.ttf
-        - asset: fonts/PlusJakartaSans-Italic.ttf
-        - asset: fonts/PlusJakartaSans-Medium.ttf
-        - asset: fonts/PlusJakartaSans-Regular.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
