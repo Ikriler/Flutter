@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-void main() {
+import 'package:flutter_sklad/core/db/data_base_helper.dart';
+import 'package:sqflite/sqflite.dart';
+Future<void> main() async {
+  DataBaseHelper().init();
   runApp(const App());
 }
 

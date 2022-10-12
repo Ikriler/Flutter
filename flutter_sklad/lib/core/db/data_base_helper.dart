@@ -11,6 +11,7 @@ class DataBaseHelper {
   static final DataBaseHelper instance = DataBaseHelper._instance();
 
   DataBaseHelper._instance();
+  DataBaseHelper();
 
   late final Directory _appDocumentDirectory;
   late final String _pathDB;
@@ -23,7 +24,8 @@ class DataBaseHelper {
 
     _pathDB = join(_appDocumentDirectory.path, 'booksstore.db');
 
-    if (Platform.isWindows || Platform.isMacOS || Platform.isLinux) {
+    if (Platform.isMacOS || Platform.isLinux) {
+      //todo
     } else {
       dataBase = await openDatabase(_pathDB, version: _version,
           onCreate: (db, version) async {
@@ -58,7 +60,7 @@ class DataBaseHelper {
 
   Future<void> onDropDataBase() async {
     dataBase.close();
-    if (Platform.isWindows || Platform.isMacOS || Platform.isLinux) {
+    if ( Platform.isMacOS || Platform.isLinux) {
 //todo
     } else {
       deleteDatabase(_pathDB);
@@ -69,9 +71,6 @@ class DataBaseHelper {
     try {
       db.insert(DataBaseRequest.tableRole, Role(role: 'Администратор').toMap());
       db.insert(DataBaseRequest.tableRole, Role(role: 'Пользователь').toMap());
-    }
-    on DatabaseException catch(e) {
-
-    }
+    } on DatabaseException catch (e) {}
   }
 }
