@@ -42,7 +42,7 @@ dependencies:
   sqflite: ^2.1.0
 
   #База данных для остальных платформ
-  sqflite_common_ffi: ^2.1.1+1
+  sqflite_common_ffi: ^2.1.1
 
   #Работы с папками
   path_provider: ^2.0.11

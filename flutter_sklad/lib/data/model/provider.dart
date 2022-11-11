@@ -2,9 +2,9 @@ import 'package:flutter_sklad/domain/entity/provider_entity.dart';
 
 class Provider extends ProviderEntity {
   late int id;
-  String name;
-  String address;
-  String phoneNumber;
+  late String name;
+  late String address;
+  late String phoneNumber;
 
   Provider({required this.name, required this.address, required this.phoneNumber}) : super(name: name, address: address, phoneNumber: phoneNumber);
 

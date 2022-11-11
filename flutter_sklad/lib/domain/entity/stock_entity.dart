@@ -1,6 +1,6 @@
 class StockEntity {
   late int id;
-  final String address;
+  late String address;
 
   StockEntity({required this.address});
 }

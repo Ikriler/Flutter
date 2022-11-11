@@ -2,8 +2,8 @@ import 'package:flutter_sklad/domain/entity/productCategory_entity.dart';
 
 class ProductCategory extends ProductCategoryEntity {
   late int id;
-  String name;
-  String description;
+  late String name;
+  late String description;
 
   ProductCategory({required this.name, required this.description}) : super(name: name, description: description);
 

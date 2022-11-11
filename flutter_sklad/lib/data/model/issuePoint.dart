@@ -2,8 +2,8 @@ import 'package:flutter_sklad/domain/entity/issuePoint_entity.dart';
 
 class IssuePoint extends IssuePointEntity {
   late int id;
-  String name;
-  String address;
+  late String name;
+  late String address;
 
   IssuePoint({required this.name, required this.address}) : super(name: name, address: address);
 

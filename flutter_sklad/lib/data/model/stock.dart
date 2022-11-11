@@ -2,7 +2,7 @@ import 'package:flutter_sklad/domain/entity/stock_entity.dart';
 
 class Stock extends StockEntity {
   late int id;
-  final String address;
+  late String address;
 
   Stock({required this.address}) : super(address: address);
 

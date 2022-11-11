@@ -1,11 +1,11 @@
 class ConsumptionEntity {
   late int id;
-  DateTime date;
-  int count;
-  int productId;
-  int userId;
-  int issuePointId;
-  String status;
+  late DateTime date;
+  late int count;
+  late int productId;
+  late int userId;
+  late int issuePointId;
+  late String status;
 
   ConsumptionEntity({required this.date, required this.count, required this.productId, required this.userId, required this.issuePointId, required this.status});
 }

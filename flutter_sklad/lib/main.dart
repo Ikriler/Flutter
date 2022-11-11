@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sklad/core/db/data_base_helper.dart';
+import 'package:flutter_sklad/screens/Screen.dart';
 import 'package:sqflite/sqflite.dart';
 Future<void> main() async {
-  DataBaseHelper().init();
   runApp(const App());
 }
 
@@ -12,7 +12,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(),
+      home: Screen(),
       debugShowCheckedModeBanner: false,
     );
   }

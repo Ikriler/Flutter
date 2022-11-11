@@ -2,10 +2,10 @@ import 'package:flutter_sklad/domain/entity/arrival_entity.dart';
 
 class Arrival extends ArrivalEntity {
   late int id;
-  DateTime date;
-  int count;
-  int providerId;
-  int productId;
+  late DateTime date;
+  late int count;
+  late int providerId;
+  late int productId;
 
   Arrival({required this.date, required this.count, required this.providerId, required this.productId}) : super(date: date, count: count, providerId: providerId, productId: productId);
 

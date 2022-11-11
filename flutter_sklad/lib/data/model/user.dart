@@ -2,14 +2,14 @@ import 'package:flutter_sklad/domain/entity/user_entity.dart';
 
 class User extends UserEntity {
   late int id;
-  String name;
-  String surname;
-  String patronymic;
-  String login;
-  String password;
-  int roleId;
-  String phoneNumber;
-  String email;
+  late String name;
+  late String surname;
+  late String patronymic;
+  late String login;
+  late String password;
+  late int roleId;
+  late String phoneNumber;
+  late String email;
 
 
   User({required this.name, required this.surname, required this.patronymic, required this.login, required this.password, required this.phoneNumber, required this.email, required this.roleId}) : super(name: name, surname: surname, patronymic: patronymic, login: login, password: password, roleId: roleId, phoneNumber: phoneNumber, email: email);
