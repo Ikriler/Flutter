@@ -7,15 +7,15 @@
 
 1. Создание инфологической модели для предметной области “Склад”
 
-![1](https://github.com/Ikriler/Flutter/blob/pr2/photochki/1.png "")
+![1](https://github.com/Ikriler/Flutter/blob/pr2/photochki/1.PNG "")
 
 2.	Добавление зависимостей для работы с базой данных
 
-![2](https://github.com/Ikriler/Flutter/blob/pr2/photochki/2.png "")
+![2](https://github.com/Ikriler/Flutter/blob/pr2/photochki/2.PNG "")
 
 3.	Создание файла для работы с запросами к базе данных
 
-![3](https://github.com/Ikriler/Flutter/blob/pr2/photochki/3.png "")
+![3](https://github.com/Ikriler/Flutter/blob/pr2/photochki/3.PNG "")
 
 4.	Создание папки с моделями для базы данных
 
