@@ -1,7 +1,7 @@
 import 'package:flutter_sklad/domain/entity/user_entity.dart';
 
 class User extends UserEntity {
-  late int id;
+  int? id;
   late String name;
   late String surname;
   late String patronymic;

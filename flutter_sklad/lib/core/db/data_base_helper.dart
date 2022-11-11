@@ -93,21 +93,21 @@ class DataBaseHelper {
       db.insert(DataBaseRequest.tableRole, Role(role: 'Администратор').toMap());
       db.insert(DataBaseRequest.tableRole, Role(role: 'Пользователь').toMap());
 
-      // db.insert(DataBaseRequest.tableUsers, User(name: "Рыба", surname: "Феофан", patronymic: "Патронник", login: "riba", password: "17", phoneNumber: "88005553535", email: "pochta@mail.ru", roleId: 1).toMap());
+      db.insert(DataBaseRequest.tableUsers, User(name: "Рыба", surname: "Феофан", patronymic: "Патронник", login: "riba", password: "17", phoneNumber: "88005553535", email: "pochta@mail.ru", roleId: 1).toMap());
 
-      // db.insert(DataBaseRequest.tableProviders, Provider(name: "name", address: "address", phoneNumber: "88005553535").toMap());
+      db.insert(DataBaseRequest.tableProviders, Provider(name: "name", address: "address", phoneNumber: "88005553535").toMap());
 
-      // db.insert(DataBaseRequest.tableStocks, Stock(address: "address ul.17").toMap());
+      db.insert(DataBaseRequest.tableStocks, Stock(address: "address ul.17").toMap());
 
-      // db.insert(DataBaseRequest.tableProductCategories, ProductCategory(name: "pervaya", description: "pervaya categoria").toMap());
+      db.insert(DataBaseRequest.tableProductCategories, ProductCategory(name: "pervaya", description: "pervaya categoria").toMap());
 
-      // db.insert(DataBaseRequest.tableProducts, Product(description: "description", price: 20.20, name: "name", exists: true, productCategoryId: 1, stockId: 1, count: 2, vendor: "vendor").toMap());
+      db.insert(DataBaseRequest.tableProducts, Product(description: "description", price: 20.20, name: "name", exists: 1, productCategoryId: 1, stockId: 1, count: 2, vendor: "vendor").toMap());
 
-      // db.insert(DataBaseRequest.tableArrivals, Arrival(date: DateTime.now(), count: 1, providerId: 1, productId: 1).toMap());
+      db.insert(DataBaseRequest.tableArrivals, Arrival(date: DateTime.now().toString(), count: 1, providerId: 1, productId: 1).toMap());
 
-      // db.insert(DataBaseRequest.tableIssuePoints, IssuePoint(name: "ozon", address: "г. Москва ул.Павелецкая 17").toMap());
+      db.insert(DataBaseRequest.tableIssuePoints, IssuePoint(name: "ozon", address: "г. Москва ул.Павелецкая 17").toMap());
 
-      // db.insert(DataBaseRequest.tableConsumptions, Consumption(date: DateTime.now(), count: 2, productId: 1, userId: 1, issuePointId: 1, status: "В пути").toMap());
+      db.insert(DataBaseRequest.tableConsumptions, Consumption(date: DateTime.now().toString(), count: 2, productId: 1, userId: 1, issuePointId: 1, status: "В пути").toMap());
 
     } on DatabaseException catch (e) {
       print(1);

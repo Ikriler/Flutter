@@ -1,7 +1,7 @@
 import 'package:flutter_sklad/domain/entity/provider_entity.dart';
 
 class Provider extends ProviderEntity {
-  late int id;
+  int? id;
   late String name;
   late String address;
   late String phoneNumber;

@@ -1,8 +1,8 @@
 import 'package:flutter_sklad/domain/entity/arrival_entity.dart';
 
 class Arrival extends ArrivalEntity {
-  late int id;
-  late DateTime date;
+  int? id;
+  late String date;
   late int count;
   late int providerId;
   late int productId;

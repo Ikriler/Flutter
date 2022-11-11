@@ -1,5 +1,5 @@
 class IssuePointEntity {
-  late int id;
+  int? id;
   late String name;
   late String address;
 

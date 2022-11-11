@@ -1,5 +1,5 @@
 class UserEntity {
-  late int id;
+  int? id;
   late String name;
   late String surname;
   late String patronymic;

@@ -2,11 +2,11 @@ import 'package:flutter_sklad/domain/entity/product_entity.dart';
 import 'dart:ffi';
 
 class Product extends ProductEntity {
-  late int id;
+  int? id;
   late String description;
   late double price;
   late String name;
-  late bool exists;
+  late int exists;
   late int productCategoryId;
   late int stockId;
   late int count;

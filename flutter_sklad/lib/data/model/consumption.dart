@@ -1,8 +1,8 @@
 import 'package:flutter_sklad/domain/entity/consumption_entity.dart';
 
 class Consumption extends ConsumptionEntity {
-  late int id;
-  late DateTime date;
+  int? id;
+  late String date;
   late int count;
   late int productId;
   late int userId;

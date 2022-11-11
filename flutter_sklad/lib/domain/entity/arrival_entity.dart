@@ -1,6 +1,6 @@
 class ArrivalEntity {
-  late int id;
-  late DateTime date;
+  int? id;
+  late String date;
   late int count;
   late int providerId;
   late int productId;
