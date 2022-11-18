@@ -1,5 +1,8 @@
 
+import 'dart:html';
+
 import 'package:dartz/dartz.dart';
+import 'package:flutter_sklad/data/model/user.dart';
 import 'package:flutter_sklad/domain/repositories/auth_repository.dart';
 import 'package:sqflite/sqflite.dart';
 
@@ -29,15 +32,22 @@ class AuthRepositoryImplementation implements AuthRepository {
         return Left('Пароль пользователя неверный');
       }
 
-      return Right(RoleEnum.values[(user.first['id_role'] as int) - 1]);
+      return Right(RoleEnum.values[(user.first['roleId'] as int) - 1]);
     } on DatabaseException catch (error) {
       return Left(error.result.toString());
     }
   }
 
   @override
-  Future<Either<String, bool>> signUp(String login, String password) {
-    // TODO: implement signUp
-    throw UnimplementedError();
+  Future<Either<String, bool>> signUp(String login, String password) async {
+    try {
+      _db.insert(table, User(login: "login",
+                            password: "password",
+                            roleId: RoleEnum.user).toMap());
+      return Right(true);
+    }
+    on DatabaseException catch(e) {
+      return Left("Ошибка");
+    }
   }
 }
