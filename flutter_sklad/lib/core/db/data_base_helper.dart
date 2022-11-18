@@ -9,6 +9,7 @@ import 'package:flutter_sklad/data/model/product.dart';
 import 'package:flutter_sklad/data/model/productCategory.dart';
 import 'package:flutter_sklad/data/model/provider.dart';
 import 'package:flutter_sklad/data/model/stock.dart';
+import 'package:flutter_sklad/domain/entity/role_entity.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
@@ -93,7 +94,7 @@ class DataBaseHelper {
       db.insert(DataBaseRequest.tableRole, Role(role: 'Администратор').toMap());
       db.insert(DataBaseRequest.tableRole, Role(role: 'Пользователь').toMap());
 
-      db.insert(DataBaseRequest.tableUsers, User(name: "Рыба", surname: "Феофан", patronymic: "Патронник", login: "riba", password: "17", phoneNumber: "88005553535", email: "pochta@mail.ru", roleId: 1).toMap());
+      db.insert(DataBaseRequest.tableUsers, User(name: "Рыба", surname: "Феофан", patronymic: "Патронник", login: "riba", password: "17", phoneNumber: "88005553535", email: "pochta@mail.ru", roleId: RoleEnum.admin).toMap());
 
       db.insert(DataBaseRequest.tableProviders, Provider(name: "name", address: "address", phoneNumber: "88005553535").toMap());
 
@@ -110,7 +111,7 @@ class DataBaseHelper {
       db.insert(DataBaseRequest.tableConsumptions, Consumption(date: DateTime.now().toString(), count: 2, productId: 1, userId: 1, issuePointId: 1, status: "В пути").toMap());
 
     } on DatabaseException catch (e) {
-      print(1);
+
     }
   }
 }

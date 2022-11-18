@@ -1,3 +1,5 @@
+import 'package:flutter_sklad/domain/entity/role_entity.dart';
+
 class UserEntity {
   int? id;
   late String name;
@@ -5,7 +7,7 @@ class UserEntity {
   late String patronymic;
   late String login;
   late String password;
-  late int roleId;
+  late RoleEnum roleId;
   late String phoneNumber;
   late String email;
 

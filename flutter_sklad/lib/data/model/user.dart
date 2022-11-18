@@ -1,5 +1,7 @@
 import 'package:flutter_sklad/domain/entity/user_entity.dart';
 
+import '../../domain/entity/role_entity.dart';
+
 class User extends UserEntity {
   int? id;
   late String name;
@@ -7,7 +9,7 @@ class User extends UserEntity {
   late String patronymic;
   late String login;
   late String password;
-  late int roleId;
+  late RoleEnum roleId;
   late String phoneNumber;
   late String email;
 
@@ -29,7 +31,16 @@ class User extends UserEntity {
   }
 
   factory User.toFromMap(Map<String, dynamic> json) {
-    return User(name: json['name'], surname: json['surname'], patronymic: json['patronymic'], login: json['login'], password: json['password'], roleId: json['roleId'], phoneNumber: json['phoneNumber'], email: json['email']);
+    return User(name: json['name'], 
+    surname: json['surname'], 
+    patronymic: json['patronymic'], 
+    login: json['login'], 
+    password: json['password'], 
+    roleId: RoleEnum.values.firstWhere(
+        (element) => element.id == (json['id_role'] as int),
+      ), 
+    phoneNumber: json['phoneNumber'], 
+    email: json['email']);
   }
 
 }
