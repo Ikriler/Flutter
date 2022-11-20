@@ -52,7 +52,7 @@ abstract class DataBaseRequest {
 
   /// Запрос для создания таблицы Users
   static const String _createTableUsers =
-      'CREATE TABLE "$tableUsers" ("id" INTEGER,"login" TEXT NOT NULL UNIQUE,"password" TEXT NOT NULL,"roleId" INTEGER NOT NULL, "name" TEXT NOT NULL, "surname" TEXT NOT NULL, "patronymic" TEXT NULL, "phoneNumber" TEXT NOT NULL UNIQUE, "email" TEXT NOT NULL UNIQUE,FOREIGN KEY("roleId") REFERENCES "Role"("id"),PRIMARY KEY("id" AUTOINCREMENT))';
+      'CREATE TABLE "$tableUsers" ("id" INTEGER,"login" TEXT NOT NULL UNIQUE,"password" TEXT NOT NULL,"roleId" INTEGER NOT NULL, "name" TEXT NOT NULL, "surname" TEXT NOT NULL, "patronymic" TEXT NULL, "phoneNumber" TEXT NOT NULL, "email" TEXT NOT NULL,FOREIGN KEY("roleId") REFERENCES "Role"("id"),PRIMARY KEY("id" AUTOINCREMENT))';
 
   /// Запрос для создания таблицы Providers
   static const String _createTableProviders = 'CREATE TABLE "$tableProviders" ("id" INTEGER, "name" TEXT NOT NULL, "address" TEXT NOT NULL, "phoneNumber" TEXT NOT NULL UNIQUE, PRIMARY KEY("id" AUTOINCREMENT))';

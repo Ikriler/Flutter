@@ -1,52 +1,52 @@
-# Практическая работа №2
-## Тема: реализация класса отвечающего за базу данных.
+# Практическая работа №3
+## Тема: реализация регистрации и авторизации. 
 
-#### Цель работы: реализовать функции инициализации базы данных для всех платформ, создания таблиц, обновления таблиц, заполнения таблиц данными, удаления базы данных. Реализовать таблицы для предметной области “Слад”.
+#### Цель работы: реализовать регистрацию и авторизацию пользователя. Провалидировать каждое поле. Реализовать переход при успешной авторизации. Реализовать вывод сообщения при неудачной авторизации или регистрации.
 
 #### Ход работы: 
 
-1. Создание инфологической модели для предметной области “Склад”
+1.	Окно для осуществления авторизации или перехода на страницу регистрации
 
-![1](https://github.com/Ikriler/Flutter/blob/pr2/photochki/1.png "")
+![1](https://github.com/Ikriler/Flutter/blob/pr3/photochki/1.png "")
 
-2.	Добавление зависимостей для работы с базой данных
+2.	Пример валидации при входе
 
-![2](https://github.com/Ikriler/Flutter/blob/pr2/photochki/2.png "")
+![2](https://github.com/Ikriler/Flutter/blob/pr3/photochki/2.png "")
 
-3.	Создание файла для работы с запросами к базе данных
+3.	Код валидации окна авторизации
 
-![3](https://github.com/Ikriler/Flutter/blob/pr2/photochki/3.png "")
+![3](https://github.com/Ikriler/Flutter/blob/pr3/photochki/3.png "")
 
-4.	Создание папки с моделями для базы данных
+4.	Метод авторизации
 
-![4](https://github.com/Ikriler/Flutter/blob/pr2/photochki/4.png "")
+![4](https://github.com/Ikriler/Flutter/blob/pr3/photochki/4.png "")
 
-5.	Пример модели
+5.	Вывод сообщения о неправильных данных при входе
 
-![5](https://github.com/Ikriler/Flutter/blob/pr2/photochki/5.png "")
+![5](https://github.com/Ikriler/Flutter/blob/pr3/photochki/5.png "")
 
-6.	Создание папки с сущностями для моделей
+6.	Успешная авторизация пользователя
 
-![6](https://github.com/Ikriler/Flutter/blob/pr2/photochki/6.png "")
+![6](https://github.com/Ikriler/Flutter/blob/pr3/photochki/6.png "")
 
-7.	Пример сущности
+7.	Успешная авторизация администратора
 
-![7](https://github.com/Ikriler/Flutter/blob/pr2/photochki/7.png "")
+![7](https://github.com/Ikriler/Flutter/blob/pr3/photochki/7.png "")
 
-8.	Создание класса с функциями работы с базой данных DataBaseHelper
+8.	Окно регистрации
 
-![8](https://github.com/Ikriler/Flutter/blob/pr2/photochki/8.png "")
+![8](https://github.com/Ikriler/Flutter/blob/pr3/photochki/8.png "")
 
-9.	Функции добавления, обновления и удаления
+9.	Пример валидации
 
-![9](https://github.com/Ikriler/Flutter/blob/pr2/photochki/9.png "")
+![9](https://github.com/Ikriler/Flutter/blob/pr3/photochki/9.png "")
 
-10.	 Функция заполнения данных
+10.	 Код валидации
 
-![10](https://github.com/Ikriler/Flutter/blob/pr2/photochki/10.png "")
+![10](https://github.com/Ikriler/Flutter/blob/pr3/photochki/10.png "")
 
-11.	 Пример заполненной таблицы
+11.	 Код регистрации
 
-![11](https://github.com/Ikriler/Flutter/blob/pr2/photochki/11.png "")
+![11](https://github.com/Ikriler/Flutter/blob/pr3/photochki/11.png "")
 
-#### Вывод: реализовал функции инициализации базы данных для всех платформ, создания таблиц, обновления таблиц, заполнения таблиц данными, удаления базы данных. Реализовал таблицы для предметной области "'Слад".
+#### Вывод: реализовал регистрацию и авторизацию пользователя. Провалидировал каждое поле. Реализовал переход при успешной авторизации. Реализовал вывод сообщения при неудачной авторизации или регистрации.

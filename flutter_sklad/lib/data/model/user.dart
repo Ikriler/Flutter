@@ -4,17 +4,17 @@ import '../../domain/entity/role_entity.dart';
 
 class User extends UserEntity {
   int? id;
-  String? name;
-  String? surname;
-  String? patronymic;
+  late String name;
+  late String surname;
+  late String patronymic;
   late String login;
   late String password;
-  RoleEnum? roleId;
-  String? phoneNumber;
-  String? email;
+  late int roleId;
+  late String phoneNumber;
+  late String email;
 
 
-  User({this.name, this.surname,  this.patronymic, required this.login, required this.password,  this.phoneNumber,  this.email, required this.roleId}) : super(name: name, surname: surname, patronymic: patronymic, login: login, password: password, roleId: roleId, phoneNumber: phoneNumber, email: email);
+  User({required this.name, required this.surname,  required this.patronymic, required this.login, required this.password,  required this.phoneNumber,  required this.email, required this.roleId}) : super(name: name, surname: surname, patronymic: patronymic, login: login, password: password, roleId: roleId, phoneNumber: phoneNumber, email: email);
 
   Map<String, dynamic> toMap() {
     return {
@@ -38,7 +38,7 @@ class User extends UserEntity {
     password: json['password'], 
     roleId: RoleEnum.values.firstWhere(
         (element) => element.id == (json['roleId'] as int),
-      ), 
+      ).id, 
     phoneNumber: json['phoneNumber'], 
     email: json['email']);
   }

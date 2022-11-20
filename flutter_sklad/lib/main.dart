@@ -1,20 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sklad/core/db/data_base_helper.dart';
-import 'package:flutter_sklad/screens/Screen.dart';
+import 'package:flutter_sklad/screens/AuthScreen.dart';
+import 'package:flutter_sklad/screens/UserScreen.dart';
 import 'package:sqflite/sqflite.dart';
+
 Future<void> main() async {
-  runApp(const App());
+  DataBaseHelper.instance.init().whenComplete(() {
+    runApp(const App());
+  });
 }
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
   const App({super.key});
+  @override
+  State<StatefulWidget> createState() {
+    return AppState();
+  }
+}
 
+class AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Screen(),
+      home: AuthScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
-

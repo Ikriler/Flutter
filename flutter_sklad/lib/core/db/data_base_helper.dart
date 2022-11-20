@@ -54,6 +54,7 @@ class DataBaseHelper {
         await onUpdateTable(dataBase);
       });
     }
+    //return Future.value(false);
   }
 
   Future<void> onUpdateTable(Database db) async {
@@ -94,7 +95,7 @@ class DataBaseHelper {
       db.insert(DataBaseRequest.tableRole, Role(role: 'Администратор').toMap());
       db.insert(DataBaseRequest.tableRole, Role(role: 'Клиент').toMap());
 
-      db.insert(DataBaseRequest.tableUsers, User(name: "Рыба", surname: "Феофан", patronymic: "Патронник", login: "riba", password: "17", phoneNumber: "88005553535", email: "pochta@mail.ru", roleId: RoleEnum.admin).toMap());
+      db.insert(DataBaseRequest.tableUsers, User(name: "Рыба", surname: "Феофан", patronymic: "Патронник", login: "Admin1", password: "Admin1", phoneNumber: "88005553535", email: "pochta@mail.ru", roleId: RoleEnum.admin.id).toMap());
 
       db.insert(DataBaseRequest.tableProviders, Provider(name: "name", address: "address", phoneNumber: "88005553535").toMap());
 

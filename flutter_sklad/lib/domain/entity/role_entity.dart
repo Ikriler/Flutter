@@ -5,6 +5,10 @@ class RoleEntity {
   RoleEntity({required this.role});
 }
 enum RoleEnum {
+  anonymous(
+    id: 0,
+    role: 'anonymous',
+  ),
   admin(
     id: 1,
     role: 'Администратор',
