@@ -7,15 +7,15 @@
 
 1.	Окно для осуществления авторизации или перехода на страницу регистрации
 
-![1](https://github.com/Ikriler/Flutter/blob/pr3/photochki/1.png "")
+![1](https://github.com/Ikriler/Flutter/blob/pr3/photochki/1.PNG "")
 
 2.	Пример валидации при входе
 
-![2](https://github.com/Ikriler/Flutter/blob/pr3/photochki/2.png "")
+![2](https://github.com/Ikriler/Flutter/blob/pr3/photochki/2.PNG "")
 
 3.	Код валидации окна авторизации
 
-![3](https://github.com/Ikriler/Flutter/blob/pr3/photochki/3.png "")
+![3](https://github.com/Ikriler/Flutter/blob/pr3/photochki/3.PNG "")
 
 4.	Метод авторизации
 
