@@ -1,4 +1,7 @@
 //import 'package:dartz/dartz.dart';
+import 'dart:convert';
+
+import 'package:crypto/crypto.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart' as wgt;
@@ -107,9 +110,10 @@ class RegistationScreenState extends wgt.State<RegistationScreen> {
                         final snackBar =
                             SnackBar(content: Text("Ошибка регистрации"));
 
+                        String hashPass = md5.convert(utf8.encode(password)).toString();
                         Future<Either<String, bool>> result =
                             AuthRepositoryImplementation()
-                                .signUp(login, password);
+                                .signUp(login, hashPass);
 
                         result.then((value) {
                           if (value.isRight()) {

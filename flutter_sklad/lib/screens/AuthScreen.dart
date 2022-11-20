@@ -1,4 +1,7 @@
 //import 'package:dartz/dartz.dart';
+import 'dart:convert';
+
+import 'package:crypto/crypto.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart' as wgt;
@@ -91,9 +94,9 @@ class AuthScreenState extends wgt.State<AuthScreen> {
                     final snackBar = SnackBar(
                         content:
                             Text("Ты не тот пользователь, которого мы ищем."));
-
+                    String hashPass = md5.convert(utf8.encode(password)).toString();
                     Future<Either<String, RoleEnum>> result =
-                        AuthRepositoryImplementation().signIn(login, password);
+                        AuthRepositoryImplementation().signIn(login, hashPass);
 
                     result.then((value) {
                       if (value.isRight()) {

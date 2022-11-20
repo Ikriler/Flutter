@@ -1,6 +1,8 @@
+import 'dart:convert';
 import 'dart:ffi';
 import 'dart:io';
 
+import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sklad/data/model/arrival.dart';
 import 'package:flutter_sklad/data/model/consumption.dart';
@@ -95,7 +97,9 @@ class DataBaseHelper {
       db.insert(DataBaseRequest.tableRole, Role(role: 'Администратор').toMap());
       db.insert(DataBaseRequest.tableRole, Role(role: 'Клиент').toMap());
 
-      db.insert(DataBaseRequest.tableUsers, User(name: "Рыба", surname: "Феофан", patronymic: "Патронник", login: "Admin1", password: "Admin1", phoneNumber: "88005553535", email: "pochta@mail.ru", roleId: RoleEnum.admin.id).toMap());
+      String hashPass = md5.convert(utf8.encode("Admin1")).toString();
+
+      db.insert(DataBaseRequest.tableUsers, User(name: "Рыба", surname: "Феофан", patronymic: "Патронник", login: "Admin1", password: hashPass, phoneNumber: "88005553535", email: "pochta@mail.ru", roleId: RoleEnum.admin.id).toMap());
 
       db.insert(DataBaseRequest.tableProviders, Provider(name: "name", address: "address", phoneNumber: "88005553535").toMap());
 
