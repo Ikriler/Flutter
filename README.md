@@ -7,15 +7,15 @@
 
 1.	Создание кубита для счетчика. В зависимости от темы приложения счетчик меняет прибавляемое или вычитаемое значение. 
 
-![1](https://github.com/Ikriler/Flutter/blob/pr4/photochki/1.PNG "")
+![1](https://github.com/Ikriler/Flutter/blob/pr4/photochki/1.png "")
 
 2.	Создание состояния для счетчика. Для состояния добавляется поле для счетчика.
 
-![2](https://github.com/Ikriler/Flutter/blob/pr4/photochki/2.PNG "")
+![2](https://github.com/Ikriler/Flutter/blob/pr4/photochki/2.png "")
 
 3.	Добавление на главный экран MultiBlocProvider. Он показывает какие кубиты будут использоваться.
 
-![3](https://github.com/Ikriler/Flutter/blob/pr4/photochki/3.PNG "")
+![3](https://github.com/Ikriler/Flutter/blob/pr4/photochki/3.png "")
 
 4.	BlocBuilder счетчика. Благодаря BlocBuilder можно перерисовывать только тот виджет, который мы меняем.
 
