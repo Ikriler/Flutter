@@ -7,15 +7,15 @@
 
 1.	Получение данных о сохраненной теме
 
-![1](https://github.com/Ikriler/Flutter/blob/pr5/photochki/1.PNG "")
+![1](https://github.com/Ikriler/Flutter/blob/pr5/photochki/1.png "")
 
 2.	Получение данных о сохраненном сообщении и переход на другой экран если сообщение не пустое.
 
-![2](https://github.com/Ikriler/Flutter/blob/pr5/photochki/2.PNG "")
+![2](https://github.com/Ikriler/Flutter/blob/pr5/photochki/2.png "")
 
 3.	Передача параметров на другой экран через параметр arguments
 
-![3](https://github.com/Ikriler/Flutter/blob/pr5/photochki/3.PNG "")
+![3](https://github.com/Ikriler/Flutter/blob/pr5/photochki/3.png "")
 
 4.	Получение параметров на другом экране
 
