@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
       setState(() {
         if (sharedPreferences!.getBool("isDark") != null &&
             sharedPreferences!.getBool("isDark") as bool) {
-          currentBrightness = Brightness.dark;
+          this.currentBrightness = Brightness.dark;
         }
       });
     });
@@ -88,13 +88,17 @@ class _MyHomePageState extends State<MyHomePage> {
             sharedPreferences!.getString("message") != "") {
           String? message = sharedPreferences!.getString("message");
           Brightness brightness = Brightness.light;
+        if (sharedPreferences!.getBool("isDark") != null &&
+            sharedPreferences!.getBool("isDark") as bool) {
+          brightness = Brightness.dark;
+        }
           Navigator.push(
               context,
               MaterialPageRoute(
                   builder: (context) => Screen2(
                         arguments: {
                           "message": message,
-                          "brightness": Theme.of(context).brightness
+                          "brightness": brightness
                         },
                       )));
         }

@@ -6,7 +6,7 @@ abstract class ChangeThemeState {}
 class ChangeThemeInitial extends ChangeThemeState {}
 
 class ThemeState extends ChangeThemeState {
-  final Brightness brightness;
+  Brightness brightness;
 
   ThemeState(this.brightness);
 }
