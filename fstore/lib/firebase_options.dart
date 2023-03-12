@@ -44,39 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAz1J0udMIL2jzgnRZ9qOPTTc2SNkg8Ayo',
-    appId: '1:985131110861:web:8c5fa81220dd0ecdb33484',
-    messagingSenderId: '985131110861',
-    projectId: 'fstore-bda14',
-    authDomain: 'fstore-bda14.firebaseapp.com',
-    storageBucket: 'fstore-bda14.appspot.com',
+    apiKey: 'AIzaSyB51DfH4_rY4XD-tL0k_45CaXoDMzzSotY',
+    appId: '1:269993129984:web:02f05d877c2850287940e5',
+    messagingSenderId: '269993129984',
+    projectId: 'fstore2-bf7c8',
+    authDomain: 'fstore2-bf7c8.firebaseapp.com',
+    storageBucket: 'fstore2-bf7c8.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBNA-QJYgJrNL4FV1dmDsol2TN8D4J0SjI',
-    appId: '1:985131110861:android:92bdcfb47a3a2945b33484',
-    messagingSenderId: '985131110861',
-    projectId: 'fstore-bda14',
-    storageBucket: 'fstore-bda14.appspot.com',
+    apiKey: 'AIzaSyCoJ9tOz87QfdI93fdEd2qgTuCu7HSznTs',
+    appId: '1:269993129984:android:2311cc69d9fb21077940e5',
+    messagingSenderId: '269993129984',
+    projectId: 'fstore2-bf7c8',
+    storageBucket: 'fstore2-bf7c8.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBwVxXyDheaV6vvPQapRPAQMwlYKOWvF4s',
-    appId: '1:985131110861:ios:eaaae595b367ac7bb33484',
-    messagingSenderId: '985131110861',
-    projectId: 'fstore-bda14',
-    storageBucket: 'fstore-bda14.appspot.com',
-    iosClientId: '985131110861-06shr008ll3pd17fk68ngqf2a1n7qgd0.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDhX7FQkIsFFqiVNh2wWZ5sMFhVXD-bg6A',
+    appId: '1:269993129984:ios:40897f67999ecff17940e5',
+    messagingSenderId: '269993129984',
+    projectId: 'fstore2-bf7c8',
+    storageBucket: 'fstore2-bf7c8.appspot.com',
+    iosClientId: '269993129984-qs1741kmnp9h8ec7b8ebtcr74bjvhu1f.apps.googleusercontent.com',
     iosBundleId: 'com.example.fstore',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBwVxXyDheaV6vvPQapRPAQMwlYKOWvF4s',
-    appId: '1:985131110861:ios:eaaae595b367ac7bb33484',
-    messagingSenderId: '985131110861',
-    projectId: 'fstore-bda14',
-    storageBucket: 'fstore-bda14.appspot.com',
-    iosClientId: '985131110861-06shr008ll3pd17fk68ngqf2a1n7qgd0.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDhX7FQkIsFFqiVNh2wWZ5sMFhVXD-bg6A',
+    appId: '1:269993129984:ios:40897f67999ecff17940e5',
+    messagingSenderId: '269993129984',
+    projectId: 'fstore2-bf7c8',
+    storageBucket: 'fstore2-bf7c8.appspot.com',
+    iosClientId: '269993129984-qs1741kmnp9h8ec7b8ebtcr74bjvhu1f.apps.googleusercontent.com',
     iosBundleId: 'com.example.fstore',
   );
 }

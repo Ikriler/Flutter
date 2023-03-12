@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "985131110861",
-    "project_id": "fstore-bda14",
-    "storage_bucket": "fstore-bda14.appspot.com"
+    "project_number": "269993129984",
+    "project_id": "fstore2-bf7c8",
+    "storage_bucket": "fstore2-bf7c8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:985131110861:android:92bdcfb47a3a2945b33484",
+        "mobilesdk_app_id": "1:269993129984:android:2311cc69d9fb21077940e5",
         "android_client_info": {
           "package_name": "com.example.fstore"
         }
       },
       "oauth_client": [
         {
-          "client_id": "985131110861-c22ecjgh41i2o47ouilsdk7k1pf2e065.apps.googleusercontent.com",
+          "client_id": "269993129984-k4ecu9pldb96jaeap2n1pnfjffu0p844.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBNA-QJYgJrNL4FV1dmDsol2TN8D4J0SjI"
+          "current_key": "AIzaSyCoJ9tOz87QfdI93fdEd2qgTuCu7HSznTs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "985131110861-c22ecjgh41i2o47ouilsdk7k1pf2e065.apps.googleusercontent.com",
+              "client_id": "269993129984-k4ecu9pldb96jaeap2n1pnfjffu0p844.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
