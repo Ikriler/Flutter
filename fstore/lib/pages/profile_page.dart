@@ -4,6 +4,8 @@ import 'package:fstore/screens/enter_screen.dart';
 import 'package:fstore/utils/firebase_utils.dart';
 
 import '../utils/message_helper.dart';
+import '../utils/user_utils.dart';
+import 'package:fstore/models/user.dart' as models;
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -70,13 +72,24 @@ class ProfilePageState extends State<ProfilePage> {
 
                       if (passwordController.text != "") {
                         if (passwordController.text.length >= 6) {
-                          FireBaseUtils.instance
-                              .updatePassword(passwordController.text)
-                              .then((status) {
-                            if (status.isSuccess) {
-                              showMessage("Пароль успешно обновлён", context);
-                            } else {
-                              showMessage(status.errorMessage!, context);
+                          UserUtils.instanse
+                              .getUser(FirebaseAuth.instance.currentUser!.uid)
+                              .then((user) {
+                            if (user.password != passwordController.text) {
+                              FireBaseUtils.instance
+                                  .updatePassword(passwordController.text)
+                                  .then((status) {
+                                UserUtils.instanse.update(
+                                    FirebaseAuth.instance.currentUser!.email!,
+                                    user.password,
+                                    FirebaseAuth.instance.currentUser!.uid);
+                                if (status.isSuccess) {
+                                  showMessage(
+                                      "Пароль успешно обновлён", context);
+                                } else {
+                                  showMessage(status.errorMessage!, context);
+                                }
+                              });
                             }
                           });
                         } else {
@@ -91,6 +104,14 @@ class ProfilePageState extends State<ProfilePage> {
                             .updateEmail(loginController.text)
                             .then((status) {
                           if (status.isSuccess) {
+                            UserUtils.instanse
+                                .getUser(FirebaseAuth.instance.currentUser!.uid)
+                                .then((user) {
+                              UserUtils.instanse.update(
+                                  FirebaseAuth.instance.currentUser!.email!,
+                                  user.password,
+                                  FirebaseAuth.instance.currentUser!.uid);
+                            });
                             showMessage("Почта успешно обновлена", context);
                           } else {
                             showMessage(status.errorMessage!, context);
