@@ -122,15 +122,19 @@ class ProfilePageState extends State<ProfilePage> {
                     child: const Text("Сохранить")),
                 ElevatedButton(
                     onPressed: () {
-                      FireBaseUtils.instance.deleteAccount().then((status) {
+                      String uid = FirebaseAuth.instance.currentUser!.uid;
+                      FireBaseUtils.instance
+                          .deleteAccount()
+                          .then((status) async {
                         if (status.isSuccess) {
-                          showMessage("Аккаунт успешно удалён", context);
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => const EnterScreen()));
+                          await UserUtils.instanse.delete(uid);
                         } else {
                           showMessage(status.errorMessage!, context);
                         }
                       });
+                      showMessage("Аккаунт успешно удалён", context);
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const EnterScreen()));
                     },
                     child: const Text("Удалить аккаунт")),
                 ElevatedButton(

@@ -10,12 +10,14 @@ class FireBaseUtils {
 
   Future<Status> register(String login, String password) async {
     try {
-      await firebaseAuth
+      return await firebaseAuth
           .createUserWithEmailAndPassword(email: login, password: password)
           .then((value) {
         UserUtils.instanse.create(login, password, value.user!.uid);
+        return Status();
+      }).onError((error, stackTrace) {
+        return Status(errorMessage: error.toString());
       });
-      return Status();
     } on FirebaseAuthException catch (e) {
       return Status(errorMessage: e.message);
     }

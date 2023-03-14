@@ -88,7 +88,12 @@ class EnterScreenState extends State<EnterScreen> {
                           .register(
                               loginController.text, passwordController.text)
                           .then((status) {
-                        showMessage("Вы успешно зарегистрировались", context);
+                        if (status.isSuccess) {
+                          showMessage("Вы успешно зарегистрировались", context);
+                        }
+                        else {
+                          showMessage(status.errorMessage!, context);
+                        }
                       });
                     },
                     child: const Text("Зарегистрироваться"))
