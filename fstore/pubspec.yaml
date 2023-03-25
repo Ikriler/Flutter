@@ -46,6 +46,13 @@ dependencies:
   firebase_core: any
   firebase_core_platform_interface: ^4.5.3
   firebase_messaging: ^14.2.6
+  firebase_storage: ^11.0.16
+  file_picker: ^5.2.6
+  path_provider: ^2.0.14
+  uuid: ^3.0.7
+  flutter_downloader: ^1.10.2
+  url_launcher: ^6.1.10
+  url_launcher_android: ^6.0.26
 
 dev_dependencies:
   flutter_test:

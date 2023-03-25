@@ -63,7 +63,8 @@ class ProfilePageState extends State<ProfilePage> {
                     )
                   ],
                 )),
-            Row(
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
